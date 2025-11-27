@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9 - Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<body>
+    <header>
+        <img class="IMGInfoBasica" src="logo-header-branco-svg.svg" alt="INFO-Básica logo" title="Tecnologia da Informação - INFO Básica">
+    </header>
+    <main>
+        <section class="section1">
+            <div class="sct1Div1">
+                <img class="IMGPC10" src="10.png" alt=""> <!--Definir os textos do alt e do title-->
+            </div>
+            <div class="sct1Div2">
+                <!--As classes dentro dos h2 alteram as cores do texto, e só funcionam se a classe estiver dentro do h2, e não do p -->
+                <p class="txt1Sct1Div2"><strong>SAIBA TUDO SOBRE</strong></p>
+                <p class="txt2Sct1Div2"><strong>Planilhas</strong></p>
+                <a href="#linkParaOFormulario" title="Download do e-book"><button class="btnEbookGratuito"><p class="txtBtnEbookGratuito"><em><b>Aprenda com o e-book<br>GRATUITO</b></em></p></button></a> <!--Definir o href deste link!-->
+            </div>
+        </section>
+        <section class="section2">
+            <div class="sct2Div1">
+                <p class="txt1Sct2Div1"><strong>Aprenda a usar todo o potencial da planilha a serviço do seu negócio!</strong></p>
+                <p class="txt2Sct2Div1">Um material educatico, ricamente ilustrado, que vai te ensinar a dominar mais e controlar seus gastos.</p>
+                <img class="LealLogo" src="8.png" alt=""> <!--Definir os textos alt e title-->
+                <ul>
+                    <li> Dicas e orientações práticas</li>
+                    <li> 25 páginas de leitura didática</li>
+                    <li> Exemplos de funções avançadas</li>
+                    <li> Procv, Proch e Se</li>
+                </ul>
+            </div>
+            <div class="sct2Div2" id="linkParaOFormulario">
+                <!--Formulário dentro do div 2 do section 2-->
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend><strong>Faça o seu cadastro e receba de forma 100% gratuita!</strong></legend>
+                        <!--Nome-->
+                        <div>
+                            <label for="nomeId" class="lblNome">*Nome
+                                <br>
+                                <input type="text" name="nome" id="nomeId" size="30" maxlenght="60" placeholder="Digite o seu nome" required>
+                            </label>
+                        </div>
+                        <!--CPF-->
+                        <div>
+                            <label for="cpfId" class="lblCpf">*CPF
+                                <br>
+                                <input type="text" name="cpf" id="cpfId" size="30" maxlenght="11" placeholder="000.000.000-00" required>
+                            </label>
+                        </div>
+                        <!--Celular-->
+                        <div>
+                            <label for="celularId" class="lblCpf">*Celular
+                                <br>
+                                <input type="text" name="celular" id="celularId" size="30" maxlenght="11" placeholder="(00) 00000-0000" required>
+                            </label>
+                        </div>
+                        <!--E-mail-->
+                        <div>
+                            <label for="emailId" class="lblEmail">*E-mail
+                                <br>
+                                <input type="text" name="email" id="emailId" size="30" maxlenght="60" required>
+                            </label>
+                        </div>
+                        <!--Cidade-->
+                        <div>
+                            <label for="cidadeId" class="lblCidade">*Cidade
+                                <br>
+                                <input type="text" name="cidade" id="cidadeId" size="30" maxlenght="60" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="ufId" class="slctUf">*UF
+                                <br>
+                                <select name="uf" id="ufId" required>
+                                    <option selected disabled>Selecione</option>
+                                    <option value="">SP</option>
+                                    <option value="">AC</option>
+                                    <option value="">AL</option>
+                                    <option value="">AM</option>
+                                    <option value="">AP</option>
+                                    <option value="">BA</option>
+                                    <option value="">CE</option>
+                                    <option value="">DF</option>
+                                    <option value="">ES</option>
+                                    <option value="">GO</option>
+                                    <option value="">MA</option>
+                                    <option value="">MG</option>
+                                    <option value="">MS</option>
+                                    <option value="">MT</option>
+                                    <option value="">PA</option>
+                                    <option value="">PB</option>
+                                    <option value="">PE</option>
+                                    <option value="">PI</option>
+                                    <option value="">PR</option>
+                                    <option value="">RJ</option>
+                                    <option value="">RN</option>
+                                    <option value="">RO</option>
+                                    <option value="">RR</option>
+                                    <option value="">RS</option>
+                                    <option value="">SC</option>
+                                    <option value="">SE</option>
+                                    <option value="">TO</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button type="submit" class="btnEnviar"><strong><em>QUERO MEU<br>E-BOOK</em></strong></button>
+                    </fieldset>
+                    <!--Scripts das máscaras:-->
+                    <script>
+                        $('#cpfId').mask('000.000.000-00', {reverse: true});
+                    </script>
+                    <script>
+                        $('#cepId').mask('00000-000');
+                    </script>
+                    <script>
+                        $('#phone_with_dddId').mask('(00) 00000-0000');
+                    </script>
+                </form>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="sct3Div1">
+                <p><strong>Planilha Eletrônica não é mais uma opção: é obrigação para se destacar no mercado!</strong></p>
+                <ul>
+                    <li> Faça planilhas poderosas, começando do zero.</li>
+                    <li> Domine as mais diversas funções lógicas e de estatística.</li>
+                    <li> Crie planilhas e gráficos de qualidade. Use a inteligência artifical.</li>
+                </ul>
+                <p><strong>Explorando todo este potencial, os resultados são: otimização de tempo, controle melhor das suas tarefas de uma forma poderosa.</strong></p>
+            </div>
+            <div class="sct3Div2">
+                <img class="IMGXLS" src="7.png" alt=""> <!--Definir os textos do alt e do title-->
+            </div>
+        </section>
+        <section class="section4">
+            <a href="#linkParaOFormulario"><button><em><strong>BAIXAR E-BOOK</strong></em></button></a>            
+            <p><strong>Entenda as funções</strong></p>
+            <div class="sct4Div1">
+                <p>PROCV / SE<br>ÍNDICE / CORRESP</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Central de relacionamento:<br><u>0800 080 0880</u></p>
+        <img src="9.png" alt="">
+    </footer>
+</body>
+</html>
