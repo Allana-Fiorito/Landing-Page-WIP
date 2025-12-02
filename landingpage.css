@@ -575,7 +575,7 @@ footer img{
         margin-bottom: 60px;
     }
 
-/* Texto: "PROCV / SE - ÍNDICE / CORRESP"*/
+    /* Texto: "PROCV / SE - ÍNDICE / CORRESP"*/
 
     .section4 div p{
         font-size: 45px;
@@ -584,67 +584,221 @@ footer img{
 
     /*🔷 Configurações do footer/rodapé:🔷*/
 
-        footer{
-            background-color: var(--azul);
-        }
+    footer{
+        background-color: var(--azul);
     }
-   
-    /*Texto do footer/rodapé*/
 
+    /*Texto do footer/rodapé*/
+    
     footer p{
         margin-top: 30px;
         font-size: 16px;
     }
-
+ 
     /* Imagem do footer/rodapé*/
 
     footer img{
         width: 60vh;
-        margin: 20px 0 20 0;
+        margin: 20px 0 20px 0;
     }
+}
 
 /*CELULAR*/
 
-/* @media(max-width: 678px){
-    .sct1Div1, .sct2Div1, .sct3Div1{
-        margin-left: 5%;
-    }
-
-    .sct1Div2, .sct2Div2, .sct3Div2{
-        margin-right: 5%;    
-    }
-
-    .section1, .section2, .section3{
+@media(max-width: 678px){
+    
+    .section1, .section2, .section3, .sct3Div1{
         flex-direction: column;
+        align-items: center;
     }
+
+    .sct1Div1, .sct1Div2, .sct2Div1, .sct2Div2, .sct3Div1, .sct3Div2{
+        width: 70vw;
+        justify-content: center;
+        margin: 0;
+    }
+
+    /*🟥 Configurações do cabeçalho/header: 🟥*/
 
     header{
-        background-color: var(--verde);
+        background-color: var(--vermelhoTeste);
     }
+
+    /*Ilustração do cabeçalho/header:*/
 
     .IMGInfoBasica{
-        height: 15vh;
+        height: 10vw;
     }
+
+    /*Ilustração do div 1 do 1º section*/
+
 
     .IMGPC10{
-        height: 15vh;
-        align-self: center;
+        height: 30vh;
     }
+
+    /*Configurações do div 2 do 1º section*/
+
+    .sct1Div2{
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /*Texto: "SAIBA TUDO SOBRE"*/
+
+    .txt1Sct1Div2{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    /*Texto: "Planilhas"*/
+
+    .txt2Sct1Div2{
+        font-size: 25px;
+    }
+
+    /*Botão para o e-book gratuito*/
+
+    .btnEbookGratuito{ 
+        margin: 15px 0 15px 0;
+    }
+
+    /*Configurações do texto do botão para o e-book*/
+
+    .txtBtnEbookGratuito{
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    /*🟥 Configurações do 2º section: 🟥*/
+
+    /*Configurações dos textos do div 1 do 2º section*/
+
+    /*Texto: "Aprenda a usar [...]"*/
 
     .txt1Sct2Div1{
-        color: var(--branco);
-        font-size: 15px;
-        margin: 30px 40px 15px 0;
-        text-shadow: 0 3px 10px var(--sombraCinza);
+        font-size: 20px;
+        margin: 25px 0 10px 0;
+        text-shadow: 0 4px 5px var(--sombraCinza);
     }
 
+    /*Texto: "Um material eduvativo, [...]"*/
+
     .txt2Sct2Div1{
-        color: var(--verdeClaro1);
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    /*Configurações da imagem no div 1 do 2º section*/
+
+    .LealLogo{
+        width: 200px;
+    }
+
+    /*Configurações da lista no div 1 do 2º section*/
+
+    .sct2Div1 ul{
+        margin: 20px 0 20px 0;
+        font-size: 15px;
+    }
+
+    /*Configurações do formulário no div 2 do section*/
+
+    fieldset{
+        width: 50%;
+        border-width: 3px;
+        box-shadow: 0 5px 20px 0 var(--amareloEscuro);
+        margin: 20px;
+    }
+    legend{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    label{
+        margin: 10px;
         font-size: 13px;
-        margin: 0 40px 0 0;
+    }
+    input, select{
+        margin: 0 0 15px 15px;
+        border-radius: 10px;
+        font-weight: 300;
+    }
+    .btnEnviar{
+        width: 150px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    /*🟥 Configurações do 3º section: 🟥*/
+
+    /*Configurações do div 1 do 3º section*/
+
+    .sct3Div1 p{
+        font-size: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    .sct3Div1 ul{
+        font-size: 15px;
+    }
+
+    /*Imagem do div 2 do 3º section*/
+
+    .IMGXLS{
+     width: 320px;
+    }
+
+    /*🟥 Configurações do 4º section: 🟥*/
+
+    /*Configurações do botão no 4º section para o e-book*/
+
+    .section4 button{
+        width: 200px;
+        height: 50px;
+        margin: 20px 0 15px 0;
+        font-size: 20px;
+    }
+
+    /*Texto: "Entenda as funções"*/
+
+    .section4 p{
+        font-size: 30px;
+    }
+
+    .section4 div{
+        background-color: var(--cinzaEscuro);
+        width: auto;
+        height: auto;
+        box-shadow: 0 10px 20px 3px var(--verdeEscuroTr);
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Texto: "PROCV / SE - ÍNDICE / CORRESP"*/
+
+    .section4 div p{
+        font-size: 30px;
+        margin: 35px 50px 35px 50px;
+    }
+
+    /*🟥 Configurações do footer/rodapé: 🟥*/
+
+    footer{
+        background-color: var(--vermelhoTeste);
     }
     
-    footer{
-        background-color: var(--verde);
+    /*Texto do footer/rodapé*/
+    
+    footer p{
+        margin-top: 15px;
+        font-size: 14px;
     }
-} */
+ 
+    /* Imagem do footer/rodapé*/
+
+    footer img{
+        width: 40vh;
+        margin: 10px 0 10px 0;
+    }
+}
