@@ -1,2 +1,3 @@
-# Landing Page (WIP)
-Atividade 9 do curso de Web Design. A realização ainda está em andamento (WIP).
+# Landing Page
+Atividade 9 do curso de Desenvolvimento Web: uma página que simula uma landing page.\
+Para visualizar a atividade online, por favor acesse: https://allana-fiorito.github.io/Landing-Page/
