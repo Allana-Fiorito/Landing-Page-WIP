@@ -345,7 +345,7 @@ input, select, .btnEnviar{
 
 .section4 p{
     font-size: 55px;
-    text-align: justify;
+    text-align: center;
     margin-top: 60px;
     color: var(--verdeEscuro);
 }
